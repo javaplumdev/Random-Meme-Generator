@@ -1,0 +1,88 @@
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+
+body {
+	overflow-x: hidden;
+	font-family: 'Poppins', sans-serif;
+}
+
+.navbar {
+	background-color: #4361ee;
+	padding: 1em;
+	text-align: center;
+	font-weight: bold;
+	font-size: 1.5em;
+	color: #fff;
+}
+
+.main-section-parent {
+	display: flex;
+	justify-content: center;
+}
+
+.main-section {
+	padding: 1em;
+	width: 460px;
+	display: flex;
+	flex-direction: column;
+}
+
+.main-section input {
+	margin-top: 1em;
+	padding: 1.5em;
+	border: none;
+	background-color: rgba(170, 165, 165, 0.164);
+	font-size: 1em;
+	width: 100%;
+	border-radius: 0.5em;
+}
+
+.main-section button {
+	border-radius: 0.5em;
+	margin-top: 2em;
+	background-color: #4361ee;
+	width: 100%;
+	padding: 1em;
+	border: none;
+	cursor: pointer;
+	font-weight: bold;
+	font-size: 1em;
+	color: white;
+}
+
+.main-section button:hover {
+	background-color: #354fc7;
+}
+
+.meme-holder {
+	position: relative;
+}
+
+.meme-image {
+	max-width: 425px;
+	margin-top: 1em;
+}
+
+.top-text,
+.bottom-text {
+	text-align: center;
+	width: 100%;
+
+	color: #fff;
+	position: absolute;
+	-webkit-text-stroke: 1px #000;
+}
+
+.top-text {
+	top: 10%;
+	right: 0%;
+}
+
+.bottom-text {
+	text-align: center;
+	bottom: 10%;
+	right: 0%;
+}
