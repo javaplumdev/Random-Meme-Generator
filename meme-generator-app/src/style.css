@@ -21,6 +21,7 @@ body {
 .main-section-parent {
 	display: flex;
 	justify-content: center;
+	max-width: auto;
 }
 
 .main-section {
@@ -58,6 +59,7 @@ body {
 }
 
 .meme-holder {
+	max-width: 100%;
 	position: relative;
 }
 
@@ -70,7 +72,6 @@ body {
 .bottom-text {
 	text-align: center;
 	width: 100%;
-
 	color: #fff;
 	position: absolute;
 	-webkit-text-stroke: 1px #000;

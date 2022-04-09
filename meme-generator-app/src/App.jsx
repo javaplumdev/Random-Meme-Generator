@@ -35,7 +35,13 @@ function App() {
 		const randomMeme = allMemes.data.memes;
 		const randomMemes = Math.floor(Math.random() * randomMeme.length);
 		const randomMemeURL = randomMeme[randomMemes].url;
-		console.log(randomMemeURL);
+
+		setMeme((prevForm) => {
+			return {
+				...prevForm,
+				memeImage: randomMemeURL,
+			};
+		});
 	}
 
 	return (
@@ -45,6 +51,8 @@ function App() {
 				onChange={handleChange}
 				handleClick={handleClick}
 				image={meme.memeImage}
+				topText={meme.topText}
+				bottomText={meme.bottomText}
 			/>
 		</>
 	);

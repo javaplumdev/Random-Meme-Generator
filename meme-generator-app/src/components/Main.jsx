@@ -20,8 +20,8 @@ function Main(props) {
 				<button onClick={props.handleClick}>Generate New Meme</button>
 				<div className="meme-holder">
 					<img src={props.image} className="meme-image" alt="" />
-					<h1 className="top-text">Sample</h1>
-					<h1 className="bottom-text">Sample two</h1>
+					<h1 className="top-text">{props.topText}</h1>
+					<h1 className="bottom-text">{props.bottomText}</h1>
 				</div>
 			</div>
 		</div>
